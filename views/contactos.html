@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R&B Muebleria - Contactos</title>
+    <!-- link iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--link font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--link bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- logo en mi titulo -->
+    <link rel="shortcut icon" href="../assets/images/logo0.png">
+    <meta name="description" content="Es una empresa que ofrece muebles de madera para el hogar, tiene diseños exclusivos y muebles hechos a medida.">
+    <meta name="keywords" content="muebles, contactos, preguntas, presupuestos, whatssapp, mail, madera, diseños, precios">
+</head>
+
+<body>
+    <header class="contactos-header">
+        <!-- /header -->
+        <div class="contactos-header__container">
+            <div class="header-contactos__logo">
+                <img src="../assets/images/logo0.png" alt="logo" width="53" height="50">
+            </div>
+            <!--menu hamburger-->
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img src="../assets/images/logo0.png" alt="logo" width="53" height="50"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link" aria-current="page" href="../index.html"><i class="fas fa-home"></i> Inicio</a>
+                                <a class="nav-link " href="productos.html"><i class="fas fa-chair"></i> Productos</a>
+                                <a class="nav-link" href="servicios.html"><i class="fas fa-tools"></i> Servicios</a>
+                                <a class="nav-link active" href="contactos.html"><i class="fas fa-envelope"></i> Contactos</a>
+                                <a class="nav-link" href="nosotros.html"><i class="fas fa-user"></i> Nosotros</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <nav class="contactos-nav">
+                <ul class="contactos-nav__lista">
+                    <li class="contactos-header__li"><a href="../index.html">Inicio</a></li>
+                    <li class="contactos-header__li"><a href="./productos.html">Productos</a></li>
+                    <li class="contactos-header__li"><a href="./servicios.html">Servicios</a></li>
+                    <li class="contactos-header__li"><a href="./contactos.html">Contactos</a></li>
+                    <li class="contactos-header__li"><a href="./nosotros.html">Nosotros</a></li>
+                </ul>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contactos-grid">
+            <div class="contactos-grid__container">
+                <div class="contacto-main">
+                    <section class="contacto__texto">
+                        <div>
+                            <h1 class="white colorverde">Contacto</h1>
+                            <p class="white">Escribinos, déjanos tu consulta</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="contacto__li">
+                                    <p class="white"><b>Encuéntranos en:</b></p>
+                                    <!-- icono mapa -->
+                                    <p class="white"><a href="http:googlemaps.com" target="_blank"><i class="fas fa-map-marker-alt"></i></a> México 821, Antofagasta</p>
+                                </li>
+                                <li class="contacto__li">
+                                    <p class="white"><b>Nuestros numeros de teléfono:</b></p>
+                                    <!-- logotipo y numero whatssapp -->
+                                    <p class="white"><a href="http:whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a> +56 964157052</p>
+                                    <p class="white"><a href="http:whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a> +56 994780030</p>
+                                </li>
+                                <li class="contacto__li">
+                                    <p class="white"><b>Nuestro Email:</b></p>
+                                    <!-- logotipo email -->
+                                    <p class="white"><a href=""><i class="fas fa-envelope"></i></a>
+                                        emilianalila@gmail.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <!-- formularios -->
+                            <form action="emilianalila@gmail.com" method="post" enctype="text/plain" class="contacto__formulario">
+                                <label for="nombre">Nombre</label>
+                                <input class="contacto__input" type="text" id="nombre" name="">
+                                <br>
+                                <label for="email">Email</label>
+                                <input class="contacto__input" type="Email" id="email" name="">
+                                <br>
+                                <label for="telefono">Teléfono</label>
+                                <input class="contacto__input" type="number" id="telefono" name="">
+                                <br>
+                                <textarea placeholder="consultas" class="contacto__textarea"></textarea>
+                                <br>
+                                <!-- boton de envio del formulario -->
+                                <div class="contacto__bottom">
+                                    <input class="contacto__submit" type="submit" name="Enviar">
+                                    <!-- boton de restablecer del formulario -->
+                                    <input class="contacto__restablecer" type="reset" name="restablecer">
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- img -->
+            <div class="contactos-grid__container">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-fluid" src="../assets/images/envios6.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="../assets/images/envios73.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="../assets/images/envios72.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="mapa">
+                <iframe data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="img-fluid mapa2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1208.5890574159473!2d-70.38796394883167!3d-23.63246768990534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96afd52862e9f7e7%3A0xaf167dcb3a670220!2sM%C3%A9xico%20821%2C%20Antofagasta%2C%20Chile!5e0!3m2!1sen!2sse!4v1650007785621!5m2!1sen!2sse" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer class="contactos-footer">
+        <div class="contactos-footer__container">
+            <div>
+                <p class="contactos-footer__texto">Derechos Reservados</p>
+            </div>
+            <!-- formas de pago -->
+            <div class="contactos-footer__targetas">
+                <a class="footer__sombra" href="https://visa.com" target="_blank"><i class="fab fa-cc-visa"></i></a>
+                <a class="footer__sombra" href="https://mastercard.com" target="_blank"><i class="fab fa-cc-mastercard"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+</body>
+
+</html>

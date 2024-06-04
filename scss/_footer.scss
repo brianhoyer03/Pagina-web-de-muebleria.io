@@ -1,0 +1,170 @@
+
+/*.....inicio......*/
+
+     /*footer*/
+.footer{
+
+    /*background-color: $secondary-color;*/
+    height: 86px;
+    padding: 0.5rem;
+    position: relative;
+    box-sizing: border-box;
+    bottom: 0;
+    width: 100vw;
+}
+.footer__container{
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  flex-direction: column;
+  
+  @include crearflex(center, center)
+}
+
+.footer__texto{
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 0rem;
+}
+.footer__redes{
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.footer__redes a{
+    color: #e9893a;
+}
+.footer__sombra:hover {
+  color: black;
+}
+
+/* .....contactos....... */
+
+ /*footer*/
+.contactos-footer{
+    background-color: $secondary-color;
+    height: 86px;
+    padding: 0.8rem;
+    position: relative;
+}
+.contactos-footer__container{
+
+    @extend .footer__container;
+}
+.contactos-footer__texto{
+    color: black;
+    margin-top: 11px;
+    margin-bottom: 0rem;
+}
+.contactos-footer__targetas{
+    text-align: center;
+    font-weight: 700;
+    font-size: 46px;    
+}
+.contactos-footer__targetas a{
+    color: #e9893a;
+}
+.footer__sombra:hover {
+  color: black;
+}
+
+/*.......nosotros.........*/
+/*footer*/
+.nosotros-footer{
+    background-color: $secondary-color;
+    height: 86px;
+    padding: 0.8rem;
+    position: relative;
+}
+.nosotros-footer__container{
+@extend .footer__container;
+}
+.nosotros-footer__texto{
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 0rem;
+}
+.nosotros-footer__targetas{
+    text-align: center;
+    font-weight: 700;
+    font-size: 46px;    
+}
+.nosotros-footer__targetas a{
+    color: #e9893a;
+}
+.footer__sombra:hover {
+  color: black;
+}
+
+
+/*........producto......*/
+/*footer*/
+.producto-footer{
+    background-color: $secondary-color;
+    height: 86px;
+    padding: 0.8rem;
+    position: relative;
+    
+}
+.producto-footer__container{
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  flex-direction: column;
+  
+  @include crearflex(center, center)
+
+}
+.producto-footer__texto{
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 0rem;
+}
+.producto-footer__targetas{
+    text-align: center;
+    font-weight: 700;
+    font-size: 45px;
+}
+.producto-footer__targetas a{
+    color: #e9893a;
+}
+.footer__sombra:hover {
+  color: black;
+}
+
+/*..........servicios......*/
+/*footer*/
+.servicio-footer{
+    background-color: $secondary-color;
+    height: 86px;
+    padding: 0.8rem;
+    position: relative;
+    border-top: 2px solid #e9893a;
+}
+.servicio-footer__container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    flex-direction: column;
+    
+    @include crearflex(center, center)
+}
+.servicio-footer__texto{
+    color: black;
+    margin-top: 11px;
+    margin-bottom: 0rem;
+}
+.servicio-footer__targetas{
+    text-align: center;
+    font-weight: 700;
+    font-size: 46px;    
+}
+.servicio-footer__targetas a{
+    color: #e9893a;
+}
+.footer__sombra:hover {
+  color: black;
+}
+  
+

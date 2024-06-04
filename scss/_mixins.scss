@@ -1,0 +1,28 @@
+
+@mixin crearflex($eje-principal, $eje-secundario){
+  display: flex;
+  justify-content: $eje-principal;
+  align-items: $eje-secundario;
+}
+
+@each $clave, $valor in $espaciados {
+	  
+	  .m-#{$clave} { 
+           margin: $valor;
+       }
+}
+
+@mixin crearespaciados($prefijo, $direccion) {
+       
+       @each $clave, $valor in $espaciados {
+	     .m#{$prefijo}-#{$clave} { 
+           margin-#{$direccion}: $valor;
+       }
+   }
+}
+
+@include crearespaciados (t, top);
+@include crearespaciados (b, bottom);
+@include crearespaciados (l, left);
+@include crearespaciados (r, right);
+

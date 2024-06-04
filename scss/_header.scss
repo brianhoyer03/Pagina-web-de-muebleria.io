@@ -1,0 +1,369 @@
+   
+   /*..... inicio.... */
+
+.header{
+  background-color: $secondary-color;
+  /*height: 80px;*/
+  padding: 0.5rem 1rem;
+  position: relative;
+
+}   
+.header__container{
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  flex-direction: row;
+  
+  @include crearflex(space-between, center)
+}
+  /* logo */
+.header__logo{
+  width: 58px;
+  height: 50px;
+  border: 2px solid black;
+  margin-left: 17px;
+}
+.header__logo img{
+  height: 100%; 
+}
+/*menu hamburger*/
+.navbar {
+  display: none;
+  background-color: $secondary-color;
+}
+.navbar-brand img{
+  border: 2px solid black;
+}
+.nav-link{
+  font-size: 17px;
+  border-bottom: 1px solid black;
+}
+.collapse i{
+  color: black;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: $primary-color;
+}
+  
+  /* nav */
+.nav__lista{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-right: 10px;
+ }
+
+.nav__li{
+    margin-left: 2rem;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer; 
+    position: relative;
+
+    a{
+    color: $primary-color;
+    text-decoration: none;
+    &:hover{
+    color: black;
+    background-color: #FFFFFF;
+    border-radius: 0.4em;
+} 
+} 
+} 
+.nav__li a::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 1.5px;
+  background-color: #e9893a;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 0.5s;  
+}
+.nav__li a:hover::after{
+  transform: scalex(1); 
+  transform-origin: left;
+}
+header div nav ul{
+  margin-bottom: 0rem;
+}  
+
+/*.......... Contactos.......... */
+
+/*header*/
+.contactos-header{
+  background-color: $secondary-color;
+  height: 80px;
+  padding: 0.5rem 1rem;
+  position: relative;
+
+}
+.contactos-header__container{
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  flex-direction: row;
+  
+  @include crearflex(space-between, center)
+}
+    /* logo */
+.header-contactos__logo{
+  width: 58px;
+  height: 50px;
+  border: 2px solid black;
+  margin-left: 17px;
+
+  img{
+  height: 100%;
+}
+}
+   /* nav */
+.contactos-nav__lista{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-right: 10px;
+} 
+.contactos-header__li{
+    margin-left: 2rem;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer; 
+    position: relative;
+
+     a{
+    color: $primary-color;
+    text-decoration: none;
+    &:hover {
+    color: black;
+    background-color: #FFFFFF;
+    border-radius: 0.4em;
+}
+} 
+} 
+.contactos-header__li a::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 1.5px;
+  background-color: #e9893a;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 0.5s;  
+}
+.contactos-header__li a:hover::after{
+  transform: scalex(1); 
+  transform-origin: left;
+}
+/* .............Nosotros......... */
+
+/*header*/
+.nosotros-header{
+  background-color: $secondary-color;
+  height: 80px;
+  padding: 0.5rem 1rem;
+  position: relative;
+
+}
+.nosotros-header__container{
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  flex-direction: row;
+  
+  @include crearflex(space-between, center)
+}
+    /* logo */
+.header-nosotros__logo{
+  width: 58px;
+  height: 50px;
+  border: 2px solid black;
+  margin-left: 17px;
+
+  img{
+  height: 100%;
+}
+}
+   /* nav */
+.nosotros-nav__lista{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-right: 10px;
+} 
+.nosotros-header__li{
+    margin-left: 2rem;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer; 
+    position: relative;
+
+     a{
+    color: $primary-color;
+    text-decoration: none;
+    &:hover {
+    color: black;
+    background-color: #FFFFFF;
+    border-radius: 0.4em;
+}
+} 
+} 
+.nosotros-header__li a::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 1.5px;
+  background-color: #e9893a;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 0.5s;  
+}
+.nosotros-header__li a:hover::after{
+  transform: scalex(1); 
+  transform-origin: left;
+}
+
+/*........... Productos....... */
+.productos-header{
+  background-color: $secondary-color;
+  height: px;
+  padding: 0.5rem 1rem;
+  position: relative;
+
+}
+.productos-header__container{
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  flex-direction: row;
+  
+  @include crearflex(space-between, center)
+}
+/* logo */
+.header-productos__logo{
+  width: 58px;
+  height: 50px;
+  border: 2px solid black;
+  margin-left: 17px;
+  img{
+  height: 100%;
+}
+}
+/* nav */
+.productos-nav__lista{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-right: 10px;
+ }
+
+.productos-header__li{
+    margin-left: 2rem;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative; 
+
+    a{
+    color: $primary-color;
+    text-decoration: none;
+    &:hover {
+    color: black;
+    background-color: #FFFFFF;
+    border-radius: 0.4em;
+}
+} 
+} 
+.productos-header__li a::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 1.5px;
+  background-color: #e9893a;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 0.5s;  
+}
+.productos-header__li a:hover::after{
+  transform: scalex(1); 
+  transform-origin: left;
+}   
+/* ...........Servicios....... */
+
+      /*header*/
+.servicios-header{
+  background-color: $secondary-color;
+  height: 80px;
+  padding: 0.5rem 1rem;
+  position: relative;
+
+}
+.servicios-header__container{
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  flex-direction: row;
+  
+  @include crearflex(space-between, center)
+}
+    /* logo */
+.header-servicios__logo{
+  width: 58px;
+  height: 50px;
+  border: 2px solid black;
+  margin-left: 17px;
+  
+  img{
+  height: 100%;
+}
+}
+    /* nav */
+.servicios-nav__lista{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-right: 10px;
+} 
+.servicios-header__li{
+    margin-left: 2rem;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+
+    a{
+    color: $primary-color;
+    text-decoration: none;
+    &:hover {
+    color: black;
+    background-color: #FFFFFF;
+    border-radius: 0.4em;
+}
+}  
+} 
+.servicios-header__li a::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 1.5px;
+  background-color: #e9893a;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 0.5s;  
+}
+.servicios-header__li a:hover::after{
+  transform: scalex(1); 
+  transform-origin: left;
+} 
+
+
